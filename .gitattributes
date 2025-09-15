@@ -1,2 +1,53 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Build results
+bin/
+obj/
+
+# Visual Studio cache/options
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+*.dbmdl
+*.bak
+
+# Others
+[Bb]uild/
+[Ll]ogs/
+[Tt]emp/
+[Tt]estResults/
+*.tmp
+*.temp
+
+# Rider IDE
+.idea/
+
+# Mac / Linux system files
+.DS_Store
+Thumbs.db
+
+# Dotnet tools
+.dotnet/
+
+# Publish outputs
+publish/
