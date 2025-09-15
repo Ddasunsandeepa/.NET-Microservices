@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PT9rRHvIrc0=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\.NET-Microservices\\PlatformService\\PlatformService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
