@@ -1,0 +1,19 @@
+# Ignore build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Dotnet generated files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
