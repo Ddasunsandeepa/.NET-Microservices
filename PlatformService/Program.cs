@@ -23,5 +23,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+// Call PrepDb here at startup
+PrepDb.PrepPopulation(app, app.Environment.IsProduction());
+
 app.Run();
 
