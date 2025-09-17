@@ -26,6 +26,6 @@ app.UseHttpsRedirection();
 
 // Call PrepDb here at startup
 PrepDb.PrepPopulation(app, app.Environment.IsProduction());
-
+Console.WriteLine($"Environment: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
 app.Run();
 
