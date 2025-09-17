@@ -12,6 +12,8 @@ builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 // Register AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+// Add services to the container.
+builder.Services.AddControllers();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -27,9 +29,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapControllers();
 
 // Call PrepDb here at startup
 PrepDb.PrepPopulation(app, app.Environment.IsProduction());
 Console.WriteLine($"Environment: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
+
+
 app.Run();
 
