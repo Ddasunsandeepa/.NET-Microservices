@@ -41,6 +41,6 @@ namespace PlatformService.Controllers
       return NotFound();
     }
 
-    
+
   }
 }
