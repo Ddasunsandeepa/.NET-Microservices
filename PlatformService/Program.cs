@@ -3,6 +3,12 @@ using PlatformService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Force Kestrel to listen on port 80
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80);
+});
+
 // Register DbContext
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
 
