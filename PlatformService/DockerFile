@@ -15,5 +15,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-# Entry point for the application
+# Expose port 80 (default HTTP)
+EXPOSE 80
+
+# Run the application on port 80
 ENTRYPOINT ["dotnet", "PlatformService.dll"]
